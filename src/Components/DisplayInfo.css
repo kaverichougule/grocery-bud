@@ -1,0 +1,28 @@
+.display{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items:center;
+    background-color: #170728;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    width: 100%;
+    
+}
+.info{
+    display: flex;
+    gap: 1rem;
+}
+.delete{
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px -1px black;
+}
+#checked:checked + label{
+    text-decoration: line-through;
+}
