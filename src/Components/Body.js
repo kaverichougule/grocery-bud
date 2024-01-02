@@ -9,7 +9,9 @@ export default function Book() {
 let [userInput,setUserInupt]=useState("");
 let [arr,setArray]=useState([]);
 useEffect(()=>{
-    setArray(JSON.parse(localStorage.getItem("key")))
+    let value=JSON.parse(localStorage.getItem("key")) || []
+
+    setArray(value)
 },[])
   function InputUser(ele){
     setUserInupt(ele.target.value);
